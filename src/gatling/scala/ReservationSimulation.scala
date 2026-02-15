@@ -14,6 +14,7 @@ class ReservationSimulation extends Simulation {
   private val httpProtocol = http
     .baseUrl("http://localhost:8080")
     .contentTypeHeader("application/json")
+    .maxConnectionsPerHost(1000)
     .acceptHeader("application/json")
 
   private val feeder = Iterator.continually {
