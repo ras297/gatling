@@ -7,7 +7,7 @@ SELECT
     0,
     'user_' || gs,
     'password'
-FROM generate_series(1, 1000) AS gs;
+FROM generate_series(1, 1000000) AS gs;
 
 
 INSERT INTO available_slots (
@@ -27,4 +27,4 @@ SELECT
     now() + ((gs + 30) || ' minutes')::interval,
     false,
     NULL
-FROM generate_series(1, 5000) AS gs;
+FROM generate_series(1, 1000000) AS gs;
