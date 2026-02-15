@@ -17,6 +17,7 @@ echo "Waiting 15 seconds for app to be ready..."
 sleep 15
 
 echo "Running Gatling tests..."
+export JAVA_OPTS="-Xms2G -Xmx4G"
 ./gradlew gatlingRun --no-configuration-cache
 
 echo "Done!"
