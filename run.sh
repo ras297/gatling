@@ -3,8 +3,8 @@ set -e
 
 DB_CONTAINER=postgres
 APP_CONTAINER=NextTick-app
-DB_USER=myuser
-DB_NAME=mydb
+DB_USER=appuser
+DB_NAME=testdb
 SEED_FILE=scripts/seed.sql
 
 echo "Running seed.sql against Postgres..."
