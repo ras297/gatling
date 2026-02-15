@@ -1,0 +1,1 @@
+./gradlew gatlingRun --no-configuration-cache
