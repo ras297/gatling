@@ -6,10 +6,10 @@ import scala.util.Random
 class ReservationSimulation extends Simulation {
 
   private val tps: Double =
-    sys.props.get("TPS").map(_.toDouble).getOrElse(1000)
+    sys.props.get("TPS").map(_.toDouble).getOrElse(500)
 
   private val durationSeconds: Int =
-    sys.props.get("DURATION").map(_.toInt).getOrElse(900)
+    sys.props.get("DURATION").map(_.toInt).getOrElse(1000)
 
   private val httpProtocol = http
     .baseUrl("http://localhost:8080")
